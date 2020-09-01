@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Calculator</title>
+	<link rel="stylesheet" type="text/css" href="styles.css">
+</head>
+<body>
+	<div class="heading">
+		<h1>
+			Basic Calculator
+		</h1>
+	</div>
+	<form name="Calc">
+		<input class = "textArea" type="text" name="Input" size="16">
+		<br>
+		<input type="button" name="op-br" value="(" onclick="Calc.Input.value+='('">
+		<input type="button" name="cl-br" value=")" onclick="Calc.Input.value+=')'">
+		<input type="button" name="decimal" value="." onclick="Calc.Input.value+='.'">
+		<!-- <input type="button" name="clear" value="C" onclick="Calc.Input.value=''"> -->			
+		<input type="button" name="divide" value="/" onclick="Calc.Input.value+='/'">
+		<br>
+		<input type="button" name="seven" value="7" onclick="Calc.Input.value+='7'">
+		<input type="button" name="eight" value="8" onclick="Calc.Input.value+='8'">
+		<input type="button" name="nine" value="9" onclick="Calc.Input.value+='9'">
+		<input type="button" name="multiply" value="x" onclick="Calc.Input.value+='*'">
+		<br>
+		<input type="button" name="four" value="4" onclick="Calc.Input.value+='4'">
+		<input type="button" name="five" value="5" onclick="Calc.Input.value+='5'">
+		<input type="button" name="six" value="6" onclick="Calc.Input.value+='6'">
+		<input type="button" name="substract" value="-" onclick="Calc.Input.value+='-'">
+		<br>
+		<input type="button" name="one" value="1" onclick="Calc.Input.value+='1'">
+		<input type="button" name="two" value="2" onclick="Calc.Input.value+='2'">
+		<input type="button" name="three" value="3" onclick="Calc.Input.value+='3'">
+		
+		<br>
+		<input type="button" name="fullclear" value="AC" onclick="Calc.Input.value=''">
+		<input type="button" name="zero" value="0" onclick="Calc.Input.value+='0'">
+		<input type="button" name="equals" value="=" onclick="Calc.Input.value=eval(Calc.Input.value)">
+		<input class="plus" type="button" name="plus" value="+" onclick="Calc.Input.value+='+'">
+		<br>
+	</form>
+</body>
+</html>
